@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resultado del Volumen</title>
+</head>
+<body>
+    <h1>Resultado del Volumen del Cilindro</h1>
+    <p>Altura: {{ altura }} metros</p>
+    <p>Diámetro: {{ diametro }} metros</p>
+    <p>Volumen: {{ volumen|floatformat:2 }} metros cúbicos</p>
+    <a href="{% url 'encuesta:volumen_cilindro' %}">Calcular otro</a>
+</body>
+</html>

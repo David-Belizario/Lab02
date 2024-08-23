@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Volumen del Cilindro</title>
+</head>
+<body>
+    <h1>Calcular Volumen del Cilindro</h1>
+    <form action="{% url 'encuesta:volumen_cilindro' %}" method="post">
+        {% csrf_token %}
+        <label for="altura">Altura (metros):</label>
+        <input type="number" id="altura" name="altura" step="0.01" required><br>
+        <label for="diametro">Diámetro (metros):</label>
+        <input type="number" id="diametro" name="diametro" step="0.01" required><br>
+        <button type="submit">Calcular</button>
+    </form>
+</body>
+</html>
